@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BIU Feed</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <h1>BIU Student Feed</h1>
+
+
+ <!-- SIGN UP AREA -->
+<div id="signup-area">
+  <h2>Create Account</h2>
+  <input type="email" id="signup-email" placeholder="Email (e.g. dara@biu.edu.ng)" />
+  <input type="password" id="signup-password" placeholder="Password" />
+  <button onclick="signup()">Sign Up</button>
+  <p>Already have an account? <a href="#" onclick="showLogin()">Log In</a></p>
+</div>
+
+<!-- LOGIN AREA -->
+<div id="login-area" style="display: none;">
+  <h2>Login</h2>
+  <input type="email" id="email" placeholder="Email" />
+  <input type="password" id="password" placeholder="Password" />
+  <button onclick="login()">Log In</button>
+  <p>New here? <a href="#" onclick="showSignup()">Create Account</a></p>
+</div>
+
+
+  <div id="feed-area" style="display:none;">
+    <textarea id="post-input" placeholder="What's on your mind?"></textarea>
+    <button onclick="postMessage()">Post</button>
+    <div id="feed"></div>
+  </div>
+</body>
+</html>
